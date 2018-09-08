@@ -1,0 +1,78 @@
+/* 
+If you are here to read my stylesheet, let me help you a little bit:
+    Specifity : top < bottom  # the selectors on the top have the less specifity and the bottom ones have the most.
+*/
+
+/* Tag selectors */
+  body {
+    font-family: 'Comic Sans MS', arial;
+    background: #FFB75E;  
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  
+    background: linear-gradient(to right, #ED8F03, #FFB75E);
+  }
+
+  h1 {
+    text-align: center;
+    color: rgb(255, 85, 0);
+  }
+
+  img {
+    width: 70%;
+    margin:auto;
+    display: block;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+/* Class selectors */
+
+  /* Make some stripes in h1 */
+  .stripes {
+    color: black;
+  }
+
+  /* Create 2 column for the lists START*/
+  .column {
+    float: left;
+    width 50%;
+  }
+  /* Lets clear out the "float" for the elements after the columns*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Some modification in the icons from FA */
+
+  .fa-thumbs-up {
+    color: rgb(255, 85, 0);
+  }
+
+  .fa-thumbs-down {
+    color: rgb(60, 60, 255);
+  }
+
+  .fa-paw {
+    color: rgb(255, 85, 0);
+  }
+
+  .imgZoom {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+  }
+
+/* Id slectors */
+
+  /* Create the container of the page */
+
+  #container {
+    width: 50%;
+    /*background-color: rgba(192, 192, 192, 0.2); */
+    border: ;
+    padding: 20px;
+    margin: auto;
+  }
